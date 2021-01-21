@@ -125,6 +125,54 @@ public:
 	}
 
 	/*!
+	 * Convert from HEX
+	 * @param hex 
+	 * @return {std::vector<::maglev::CppAny>} 
+	*/
+	std::vector<::maglev::CppAny> FromHEX(std::string hex)
+	{
+		::maglev::CppAny ret;
+		run_haxe([&ret,hex](){
+			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
+			std::vector<::maglev::CppAny> myargs;
+			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
+			param0->setStdString(hex);
+			myargs.push_back(param0);
+			bus->call("ColorConverter.FromHEX", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
+		});
+		std::vector<::maglev::CppAny> retarr;
+		return retarr;
+	}
+
+	/*!
+	 * Convert from XYZ
+	 * @param x 
+	 * @param y 
+	 * @param z 
+	 * @return {std::vector<::maglev::CppAny>} 
+	*/
+	std::vector<::maglev::CppAny> FromXYZ(double x, double y, double z)
+	{
+		::maglev::CppAny ret;
+		run_haxe([&ret,x,y,z](){
+			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
+			std::vector<::maglev::CppAny> myargs;
+			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
+			param0->setDouble(x);
+			myargs.push_back(param0);
+			::maglev::CppAny param1 = new ::maglev::CppAny_obj();
+			param1->setDouble(y);
+			myargs.push_back(param1);
+			::maglev::CppAny param2 = new ::maglev::CppAny_obj();
+			param2->setDouble(z);
+			myargs.push_back(param2);
+			bus->call("ColorConverter.FromXYZ", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
+		});
+		std::vector<::maglev::CppAny> retarr;
+		return retarr;
+	}
+
+	/*!
 	 * Convert from RGB using illumination and observer angles
 	 * @param r 
 	 * @param g 
@@ -231,6 +279,70 @@ public:
 			param5->setStdString(observer2);
 			myargs.push_back(param5);
 			bus->call("ColorConverter.ConvertCMYK", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
+		});
+		std::vector<::maglev::CppAny> retarr;
+		return retarr;
+	}
+
+	/*!
+	 * Convert from HEX using illumination and observer angles
+	 * @param hex 
+	 * @param observer1 
+	 * @param observer2 
+	 * @return {std::vector<::maglev::CppAny>} 
+	*/
+	std::vector<::maglev::CppAny> ConvertHEX(std::string hex, std::string observer1, std::string observer2)
+	{
+		::maglev::CppAny ret;
+		run_haxe([&ret,hex,observer1,observer2](){
+			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
+			std::vector<::maglev::CppAny> myargs;
+			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
+			param0->setStdString(hex);
+			myargs.push_back(param0);
+			::maglev::CppAny param1 = new ::maglev::CppAny_obj();
+			param1->setStdString(observer1);
+			myargs.push_back(param1);
+			::maglev::CppAny param2 = new ::maglev::CppAny_obj();
+			param2->setStdString(observer2);
+			myargs.push_back(param2);
+			bus->call("ColorConverter.ConvertHEX", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
+		});
+		std::vector<::maglev::CppAny> retarr;
+		return retarr;
+	}
+
+	/*!
+	 * Convert from XYZ using illumination and observer angles
+	 * @param x 
+	 * @param y 
+	 * @param z 
+	 * @param observer1 
+	 * @param observer2 
+	 * @return {std::vector<::maglev::CppAny>} 
+	*/
+	std::vector<::maglev::CppAny> ConvertXYZ(double x, double y, double z, std::string observer1, std::string observer2)
+	{
+		::maglev::CppAny ret;
+		run_haxe([&ret,x,y,z,observer1,observer2](){
+			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
+			std::vector<::maglev::CppAny> myargs;
+			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
+			param0->setDouble(x);
+			myargs.push_back(param0);
+			::maglev::CppAny param1 = new ::maglev::CppAny_obj();
+			param1->setDouble(y);
+			myargs.push_back(param1);
+			::maglev::CppAny param2 = new ::maglev::CppAny_obj();
+			param2->setDouble(z);
+			myargs.push_back(param2);
+			::maglev::CppAny param3 = new ::maglev::CppAny_obj();
+			param3->setStdString(observer1);
+			myargs.push_back(param3);
+			::maglev::CppAny param4 = new ::maglev::CppAny_obj();
+			param4->setStdString(observer2);
+			myargs.push_back(param4);
+			bus->call("ColorConverter.ConvertXYZ", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
 		});
 		std::vector<::maglev::CppAny> retarr;
 		return retarr;
@@ -352,6 +464,72 @@ public:
 	}
 
 	/*!
+	 * Add a reference color
+	 * @param system 
+	 * @param name 
+	 * @param description 
+	 * @param hex 
+	*/
+	void AddReferenceColorByHEX(std::string system, std::string name, std::string description, std::string hex)
+	{
+		::maglev::CppAny ret;
+		run_haxe([&ret,system,name,description,hex](){
+			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
+			std::vector<::maglev::CppAny> myargs;
+			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
+			param0->setStdString(system);
+			myargs.push_back(param0);
+			::maglev::CppAny param1 = new ::maglev::CppAny_obj();
+			param1->setStdString(name);
+			myargs.push_back(param1);
+			::maglev::CppAny param2 = new ::maglev::CppAny_obj();
+			param2->setStdString(description);
+			myargs.push_back(param2);
+			::maglev::CppAny param3 = new ::maglev::CppAny_obj();
+			param3->setStdString(hex);
+			myargs.push_back(param3);
+			bus->call("ColorConverter.AddReferenceColorByHEX", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
+		});
+	}
+
+	/*!
+	 * Add a reference color
+	 * @param system 
+	 * @param name 
+	 * @param description 
+	 * @param x 
+	 * @param y 
+	 * @param z 
+	*/
+	void AddReferenceColorByXYZ(std::string system, std::string name, std::string description, double x, double y, double z)
+	{
+		::maglev::CppAny ret;
+		run_haxe([&ret,system,name,description,x,y,z](){
+			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
+			std::vector<::maglev::CppAny> myargs;
+			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
+			param0->setStdString(system);
+			myargs.push_back(param0);
+			::maglev::CppAny param1 = new ::maglev::CppAny_obj();
+			param1->setStdString(name);
+			myargs.push_back(param1);
+			::maglev::CppAny param2 = new ::maglev::CppAny_obj();
+			param2->setStdString(description);
+			myargs.push_back(param2);
+			::maglev::CppAny param3 = new ::maglev::CppAny_obj();
+			param3->setDouble(x);
+			myargs.push_back(param3);
+			::maglev::CppAny param4 = new ::maglev::CppAny_obj();
+			param4->setDouble(y);
+			myargs.push_back(param4);
+			::maglev::CppAny param5 = new ::maglev::CppAny_obj();
+			param5->setDouble(z);
+			myargs.push_back(param5);
+			bus->call("ColorConverter.AddReferenceColorByXYZ", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
+		});
+	}
+
+	/*!
 	 * 
 	 * @param r 
 	 * @param g 
@@ -434,6 +612,54 @@ public:
 			param3->setDouble(k);
 			myargs.push_back(param3);
 			bus->call("ColorConverter.FindReferenceColorByCMYK", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
+		});
+		std::vector<::maglev::CppAny> retarr;
+		return retarr;
+	}
+
+	/*!
+	 * 
+	 * @param hex 
+	 * @return {std::vector<::maglev::CppAny>} 
+	*/
+	std::vector<::maglev::CppAny> FindReferenceColorByHEX(std::string hex)
+	{
+		::maglev::CppAny ret;
+		run_haxe([&ret,hex](){
+			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
+			std::vector<::maglev::CppAny> myargs;
+			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
+			param0->setStdString(hex);
+			myargs.push_back(param0);
+			bus->call("ColorConverter.FindReferenceColorByHEX", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
+		});
+		std::vector<::maglev::CppAny> retarr;
+		return retarr;
+	}
+
+	/*!
+	 * 
+	 * @param x 
+	 * @param y 
+	 * @param z 
+	 * @return {std::vector<::maglev::CppAny>} 
+	*/
+	std::vector<::maglev::CppAny> FindReferenceColorByXYZ(double x, double y, double z)
+	{
+		::maglev::CppAny ret;
+		run_haxe([&ret,x,y,z](){
+			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
+			std::vector<::maglev::CppAny> myargs;
+			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
+			param0->setDouble(x);
+			myargs.push_back(param0);
+			::maglev::CppAny param1 = new ::maglev::CppAny_obj();
+			param1->setDouble(y);
+			myargs.push_back(param1);
+			::maglev::CppAny param2 = new ::maglev::CppAny_obj();
+			param2->setDouble(z);
+			myargs.push_back(param2);
+			bus->call("ColorConverter.FindReferenceColorByXYZ", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
 		});
 		std::vector<::maglev::CppAny> retarr;
 		return retarr;

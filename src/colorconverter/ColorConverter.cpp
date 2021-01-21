@@ -53,6 +53,14 @@ HX_LOCAL_STACK_FRAME(_hx_pos_6d0870e1c58d4569_184_registerMyMethods,"colorconver
 HX_LOCAL_STACK_FRAME(_hx_pos_6d0870e1c58d4569_195_registerMyMethods,"colorconverter.ColorConverter","registerMyMethods",0xf49f8263,"colorconverter.ColorConverter.registerMyMethods","colorconverter/ColorConverter.hx",195,0xacb5fd0f)
 HX_LOCAL_STACK_FRAME(_hx_pos_6d0870e1c58d4569_206_registerMyMethods,"colorconverter.ColorConverter","registerMyMethods",0xf49f8263,"colorconverter.ColorConverter.registerMyMethods","colorconverter/ColorConverter.hx",206,0xacb5fd0f)
 HX_LOCAL_STACK_FRAME(_hx_pos_6d0870e1c58d4569_217_registerMyMethods,"colorconverter.ColorConverter","registerMyMethods",0xf49f8263,"colorconverter.ColorConverter.registerMyMethods","colorconverter/ColorConverter.hx",217,0xacb5fd0f)
+HX_LOCAL_STACK_FRAME(_hx_pos_6d0870e1c58d4569_228_registerMyMethods,"colorconverter.ColorConverter","registerMyMethods",0xf49f8263,"colorconverter.ColorConverter.registerMyMethods","colorconverter/ColorConverter.hx",228,0xacb5fd0f)
+HX_LOCAL_STACK_FRAME(_hx_pos_6d0870e1c58d4569_239_registerMyMethods,"colorconverter.ColorConverter","registerMyMethods",0xf49f8263,"colorconverter.ColorConverter.registerMyMethods","colorconverter/ColorConverter.hx",239,0xacb5fd0f)
+HX_LOCAL_STACK_FRAME(_hx_pos_6d0870e1c58d4569_250_registerMyMethods,"colorconverter.ColorConverter","registerMyMethods",0xf49f8263,"colorconverter.ColorConverter.registerMyMethods","colorconverter/ColorConverter.hx",250,0xacb5fd0f)
+HX_LOCAL_STACK_FRAME(_hx_pos_6d0870e1c58d4569_261_registerMyMethods,"colorconverter.ColorConverter","registerMyMethods",0xf49f8263,"colorconverter.ColorConverter.registerMyMethods","colorconverter/ColorConverter.hx",261,0xacb5fd0f)
+HX_LOCAL_STACK_FRAME(_hx_pos_6d0870e1c58d4569_272_registerMyMethods,"colorconverter.ColorConverter","registerMyMethods",0xf49f8263,"colorconverter.ColorConverter.registerMyMethods","colorconverter/ColorConverter.hx",272,0xacb5fd0f)
+HX_LOCAL_STACK_FRAME(_hx_pos_6d0870e1c58d4569_283_registerMyMethods,"colorconverter.ColorConverter","registerMyMethods",0xf49f8263,"colorconverter.ColorConverter.registerMyMethods","colorconverter/ColorConverter.hx",283,0xacb5fd0f)
+HX_LOCAL_STACK_FRAME(_hx_pos_6d0870e1c58d4569_294_registerMyMethods,"colorconverter.ColorConverter","registerMyMethods",0xf49f8263,"colorconverter.ColorConverter.registerMyMethods","colorconverter/ColorConverter.hx",294,0xacb5fd0f)
+HX_LOCAL_STACK_FRAME(_hx_pos_6d0870e1c58d4569_305_registerMyMethods,"colorconverter.ColorConverter","registerMyMethods",0xf49f8263,"colorconverter.ColorConverter.registerMyMethods","colorconverter/ColorConverter.hx",305,0xacb5fd0f)
 HX_LOCAL_STACK_FRAME(_hx_pos_6d0870e1c58d4569_16_registerMyMethods,"colorconverter.ColorConverter","registerMyMethods",0xf49f8263,"colorconverter.ColorConverter.registerMyMethods","colorconverter/ColorConverter.hx",16,0xacb5fd0f)
 namespace colorconverter{
 
@@ -125,10 +133,10 @@ HXLINE(  49)			return result;
             			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_52_registerMyMethods)
 HXLINE(  53)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
 HXLINE(  54)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
-HXLINE(  55)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.ConvertRGB",6b,b8,71,11)));
+HXLINE(  55)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.FromHEX",60,fd,5b,cb)));
 HXLINE(  56)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
 HXLINE(  57)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE(  58)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.ConvertRGB' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",44,0c,57,ec),data);
+HXLINE(  58)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.FromHEX' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",85,82,a3,da),data);
 HXLINE(  59)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE(  60)			return result;
             		}
@@ -139,10 +147,10 @@ HXLINE(  60)			return result;
             			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_63_registerMyMethods)
 HXLINE(  64)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
 HXLINE(  65)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
-HXLINE(  66)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.ConvertCIELAB",f0,63,d3,ba)));
+HXLINE(  66)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.FromXYZ",de,32,68,cb)));
 HXLINE(  67)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
 HXLINE(  68)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE(  69)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.ConvertCIELAB' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",95,19,ee,10),data);
+HXLINE(  69)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.FromXYZ' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",03,25,f1,e9),data);
 HXLINE(  70)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE(  71)			return result;
             		}
@@ -153,10 +161,10 @@ HXLINE(  71)			return result;
             			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_74_registerMyMethods)
 HXLINE(  75)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
 HXLINE(  76)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
-HXLINE(  77)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.ConvertCMYK",be,13,2a,28)));
+HXLINE(  77)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.ConvertRGB",6b,b8,71,11)));
 HXLINE(  78)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
 HXLINE(  79)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE(  80)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.ConvertCMYK' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",e3,30,44,11),data);
+HXLINE(  80)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.ConvertRGB' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",44,0c,57,ec),data);
 HXLINE(  81)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE(  82)			return result;
             		}
@@ -167,10 +175,10 @@ HXLINE(  82)			return result;
             			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_85_registerMyMethods)
 HXLINE(  86)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
 HXLINE(  87)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
-HXLINE(  88)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.AddReferenceColorByRGB",2e,ea,d6,d2)));
+HXLINE(  88)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.ConvertCIELAB",f0,63,d3,ba)));
 HXLINE(  89)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
 HXLINE(  90)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE(  91)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.AddReferenceColorByRGB' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",87,a9,82,3a),data);
+HXLINE(  91)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.ConvertCIELAB' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",95,19,ee,10),data);
 HXLINE(  92)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE(  93)			return result;
             		}
@@ -181,10 +189,10 @@ HXLINE(  93)			return result;
             			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_96_registerMyMethods)
 HXLINE(  97)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
 HXLINE(  98)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
-HXLINE(  99)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.AddReferenceColorByCIELAB",0d,6e,e7,0a)));
+HXLINE(  99)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.ConvertCMYK",be,13,2a,28)));
 HXLINE( 100)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
 HXLINE( 101)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE( 102)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.AddReferenceColorByCIELAB' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",32,e8,6b,a2),data);
+HXLINE( 102)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.ConvertCMYK' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",e3,30,44,11),data);
 HXLINE( 103)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE( 104)			return result;
             		}
@@ -195,10 +203,10 @@ HXLINE( 104)			return result;
             			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_107_registerMyMethods)
 HXLINE( 108)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
 HXLINE( 109)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
-HXLINE( 110)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.AddReferenceColorByCMYK",9b,6c,50,9f)));
+HXLINE( 110)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.ConvertHEX",39,20,6a,11)));
 HXLINE( 111)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
 HXLINE( 112)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE( 113)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.AddReferenceColorByCMYK' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",40,2e,42,29),data);
+HXLINE( 113)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.ConvertHEX' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",12,d9,dc,37),data);
 HXLINE( 114)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE( 115)			return result;
             		}
@@ -209,10 +217,10 @@ HXLINE( 115)			return result;
             			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_118_registerMyMethods)
 HXLINE( 119)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
 HXLINE( 120)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
-HXLINE( 121)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.FindReferenceColorByRGB",d4,33,3d,cc)));
+HXLINE( 121)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.ConvertXYZ",b7,55,76,11)));
 HXLINE( 122)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
 HXLINE( 123)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE( 124)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.FindReferenceColorByRGB' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",f9,f2,85,bf),data);
+HXLINE( 124)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.ConvertXYZ' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",90,7b,2a,47),data);
 HXLINE( 125)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE( 126)			return result;
             		}
@@ -223,10 +231,10 @@ HXLINE( 126)			return result;
             			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_129_registerMyMethods)
 HXLINE( 130)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
 HXLINE( 131)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
-HXLINE( 132)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.FindReferenceColorByCIELAB",27,30,8e,23)));
+HXLINE( 132)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.AddReferenceColorByRGB",2e,ea,d6,d2)));
 HXLINE( 133)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
 HXLINE( 134)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE( 135)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.FindReferenceColorByCIELAB' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",00,92,36,6d),data);
+HXLINE( 135)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.AddReferenceColorByRGB' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",87,a9,82,3a),data);
 HXLINE( 136)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE( 137)			return result;
             		}
@@ -237,10 +245,10 @@ HXLINE( 137)			return result;
             			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_140_registerMyMethods)
 HXLINE( 141)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
 HXLINE( 142)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
-HXLINE( 143)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.FindReferenceColorByCMYK",35,94,6a,df)));
+HXLINE( 143)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.AddReferenceColorByCIELAB",0d,6e,e7,0a)));
 HXLINE( 144)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
 HXLINE( 145)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE( 146)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.FindReferenceColorByCMYK' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",8e,28,1f,07),data);
+HXLINE( 146)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.AddReferenceColorByCIELAB' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",32,e8,6b,a2),data);
 HXLINE( 147)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE( 148)			return result;
             		}
@@ -251,10 +259,10 @@ HXLINE( 148)			return result;
             			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_151_registerMyMethods)
 HXLINE( 152)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
 HXLINE( 153)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
-HXLINE( 154)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.FindReferenceColor",42,6e,8d,ca)));
+HXLINE( 154)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.AddReferenceColorByCMYK",9b,6c,50,9f)));
 HXLINE( 155)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
 HXLINE( 156)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE( 157)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.FindReferenceColor' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",9b,66,48,b3),data);
+HXLINE( 157)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.AddReferenceColorByCMYK' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",40,2e,42,29),data);
 HXLINE( 158)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE( 159)			return result;
             		}
@@ -265,10 +273,10 @@ HXLINE( 159)			return result;
             			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_162_registerMyMethods)
 HXLINE( 163)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
 HXLINE( 164)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
-HXLINE( 165)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.RemoveReferenceColorSystem",9c,80,cb,b5)));
+HXLINE( 165)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.AddReferenceColorByHEX",fc,51,cf,d2)));
 HXLINE( 166)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
 HXLINE( 167)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE( 168)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.RemoveReferenceColorSystem' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",f5,19,05,07),data);
+HXLINE( 168)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.AddReferenceColorByHEX' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",55,76,08,86),data);
 HXLINE( 169)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE( 170)			return result;
             		}
@@ -279,10 +287,10 @@ HXLINE( 170)			return result;
             			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_173_registerMyMethods)
 HXLINE( 174)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
 HXLINE( 175)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
-HXLINE( 176)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.GetReferenceColorSystems",c7,90,8c,15)));
+HXLINE( 176)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.AddReferenceColorByXYZ",7a,87,db,d2)));
 HXLINE( 177)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
 HXLINE( 178)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE( 179)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.GetReferenceColorSystems' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",20,50,f1,13),data);
+HXLINE( 179)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.AddReferenceColorByXYZ' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",d3,18,56,95),data);
 HXLINE( 180)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE( 181)			return result;
             		}
@@ -293,10 +301,10 @@ HXLINE( 181)			return result;
             			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_184_registerMyMethods)
 HXLINE( 185)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
 HXLINE( 186)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
-HXLINE( 187)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.GetReferenceColors",76,0a,f6,44)));
+HXLINE( 187)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.FindReferenceColorByRGB",d4,33,3d,cc)));
 HXLINE( 188)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
 HXLINE( 189)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE( 190)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.GetReferenceColors' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",cf,70,94,25),data);
+HXLINE( 190)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.FindReferenceColorByRGB' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",f9,f2,85,bf),data);
 HXLINE( 191)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE( 192)			return result;
             		}
@@ -307,10 +315,10 @@ HXLINE( 192)			return result;
             			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_195_registerMyMethods)
 HXLINE( 196)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
 HXLINE( 197)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
-HXLINE( 198)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.GetIlluminationObserverAngles",aa,40,1c,a4)));
+HXLINE( 198)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.FindReferenceColorByCIELAB",27,30,8e,23)));
 HXLINE( 199)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
 HXLINE( 200)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE( 201)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.GetIlluminationObserverAngles' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",4f,09,75,48),data);
+HXLINE( 201)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.FindReferenceColorByCIELAB' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",00,92,36,6d),data);
 HXLINE( 202)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE( 203)			return result;
             		}
@@ -321,10 +329,10 @@ HXLINE( 203)			return result;
             			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_206_registerMyMethods)
 HXLINE( 207)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
 HXLINE( 208)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
-HXLINE( 209)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.SaveReferenceColors",6d,55,8c,fe)));
+HXLINE( 209)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.FindReferenceColorByCMYK",35,94,6a,df)));
 HXLINE( 210)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
 HXLINE( 211)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE( 212)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.SaveReferenceColors' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",12,47,e9,ed),data);
+HXLINE( 212)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.FindReferenceColorByCMYK' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",8e,28,1f,07),data);
 HXLINE( 213)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE( 214)			return result;
             		}
@@ -335,12 +343,124 @@ HXLINE( 214)			return result;
             			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_217_registerMyMethods)
 HXLINE( 218)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
 HXLINE( 219)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
-HXLINE( 220)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.LoadReferenceColors",a4,74,77,57)));
+HXLINE( 220)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.FindReferenceColorByHEX",a2,9b,35,cc)));
 HXLINE( 221)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
 HXLINE( 222)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE( 223)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.LoadReferenceColors' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",c9,90,24,05),data);
+HXLINE( 223)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.FindReferenceColorByHEX' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",c7,bf,0b,0b),data);
 HXLINE( 224)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE( 225)			return result;
+            		}
+            		HX_END_LOCAL_FUNC1(return)
+
+            		HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_19, ::maglev::MagLev,bus) HXARGC(1)
+            		 ::maglev::MagLevResult _hx_run( ::maglev::MagLevArray args){
+            			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_228_registerMyMethods)
+HXLINE( 229)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
+HXLINE( 230)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
+HXLINE( 231)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.FindReferenceColorByXYZ",20,d1,41,cc)));
+HXLINE( 232)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
+HXLINE( 233)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
+HXLINE( 234)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.FindReferenceColorByXYZ' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",45,62,59,1a),data);
+HXLINE( 235)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
+HXLINE( 236)			return result;
+            		}
+            		HX_END_LOCAL_FUNC1(return)
+
+            		HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_20, ::maglev::MagLev,bus) HXARGC(1)
+            		 ::maglev::MagLevResult _hx_run( ::maglev::MagLevArray args){
+            			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_239_registerMyMethods)
+HXLINE( 240)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
+HXLINE( 241)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
+HXLINE( 242)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.FindReferenceColor",42,6e,8d,ca)));
+HXLINE( 243)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
+HXLINE( 244)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
+HXLINE( 245)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.FindReferenceColor' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",9b,66,48,b3),data);
+HXLINE( 246)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
+HXLINE( 247)			return result;
+            		}
+            		HX_END_LOCAL_FUNC1(return)
+
+            		HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_21, ::maglev::MagLev,bus) HXARGC(1)
+            		 ::maglev::MagLevResult _hx_run( ::maglev::MagLevArray args){
+            			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_250_registerMyMethods)
+HXLINE( 251)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
+HXLINE( 252)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
+HXLINE( 253)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.RemoveReferenceColorSystem",9c,80,cb,b5)));
+HXLINE( 254)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
+HXLINE( 255)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
+HXLINE( 256)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.RemoveReferenceColorSystem' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",f5,19,05,07),data);
+HXLINE( 257)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
+HXLINE( 258)			return result;
+            		}
+            		HX_END_LOCAL_FUNC1(return)
+
+            		HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_22, ::maglev::MagLev,bus) HXARGC(1)
+            		 ::maglev::MagLevResult _hx_run( ::maglev::MagLevArray args){
+            			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_261_registerMyMethods)
+HXLINE( 262)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
+HXLINE( 263)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
+HXLINE( 264)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.GetReferenceColorSystems",c7,90,8c,15)));
+HXLINE( 265)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
+HXLINE( 266)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
+HXLINE( 267)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.GetReferenceColorSystems' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",20,50,f1,13),data);
+HXLINE( 268)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
+HXLINE( 269)			return result;
+            		}
+            		HX_END_LOCAL_FUNC1(return)
+
+            		HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_23, ::maglev::MagLev,bus) HXARGC(1)
+            		 ::maglev::MagLevResult _hx_run( ::maglev::MagLevArray args){
+            			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_272_registerMyMethods)
+HXLINE( 273)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
+HXLINE( 274)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
+HXLINE( 275)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.GetReferenceColors",76,0a,f6,44)));
+HXLINE( 276)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
+HXLINE( 277)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
+HXLINE( 278)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.GetReferenceColors' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",cf,70,94,25),data);
+HXLINE( 279)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
+HXLINE( 280)			return result;
+            		}
+            		HX_END_LOCAL_FUNC1(return)
+
+            		HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_24, ::maglev::MagLev,bus) HXARGC(1)
+            		 ::maglev::MagLevResult _hx_run( ::maglev::MagLevArray args){
+            			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_283_registerMyMethods)
+HXLINE( 284)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
+HXLINE( 285)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
+HXLINE( 286)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.GetIlluminationObserverAngles",aa,40,1c,a4)));
+HXLINE( 287)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
+HXLINE( 288)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
+HXLINE( 289)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.GetIlluminationObserverAngles' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",4f,09,75,48),data);
+HXLINE( 290)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
+HXLINE( 291)			return result;
+            		}
+            		HX_END_LOCAL_FUNC1(return)
+
+            		HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_25, ::maglev::MagLev,bus) HXARGC(1)
+            		 ::maglev::MagLevResult _hx_run( ::maglev::MagLevArray args){
+            			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_294_registerMyMethods)
+HXLINE( 295)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
+HXLINE( 296)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
+HXLINE( 297)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.SaveReferenceColors",6d,55,8c,fe)));
+HXLINE( 298)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
+HXLINE( 299)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
+HXLINE( 300)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.SaveReferenceColors' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",12,47,e9,ed),data);
+HXLINE( 301)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
+HXLINE( 302)			return result;
+            		}
+            		HX_END_LOCAL_FUNC1(return)
+
+            		HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_26, ::maglev::MagLev,bus) HXARGC(1)
+            		 ::maglev::MagLevResult _hx_run( ::maglev::MagLevArray args){
+            			HX_STACKFRAME(&_hx_pos_6d0870e1c58d4569_305_registerMyMethods)
+HXLINE( 306)			 ::maglev::MagLevArray data = ::maglev::MagLevArray_obj::create();
+HXLINE( 307)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_implemented_",a8,29,87,20)));
+HXLINE( 308)			data->push(::maglev::MagLevString_obj::fromString(HX_("ColorConverter.LoadReferenceColors",a4,74,77,57)));
+HXLINE( 309)			data->push(::maglev::MagLevString_obj::fromString(HX_("colorconverter",5d,c3,95,a5)));
+HXLINE( 310)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
+HXLINE( 311)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'ColorConverter.LoadReferenceColors' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",c9,90,24,05),data);
+HXLINE( 312)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
+HXLINE( 313)			return result;
             		}
             		HX_END_LOCAL_FUNC1(return)
 
@@ -353,37 +473,53 @@ HXDLIN(  30)		_hx_tmp1->_hx_register(HX_("ColorConverter.FromCIELAB",29,f9,70,3b
 HXLINE(  41)		 ::maglev::MagLev _hx_tmp2 = this->maglev;
 HXDLIN(  41)		_hx_tmp2->_hx_register(HX_("ColorConverter.FromCMYK",b7,b8,d9,21),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_2(bus))));
 HXLINE(  52)		 ::maglev::MagLev _hx_tmp3 = this->maglev;
-HXDLIN(  52)		_hx_tmp3->_hx_register(HX_("ColorConverter.ConvertRGB",6b,b8,71,11),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_3(bus))));
+HXDLIN(  52)		_hx_tmp3->_hx_register(HX_("ColorConverter.FromHEX",60,fd,5b,cb),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_3(bus))));
 HXLINE(  63)		 ::maglev::MagLev _hx_tmp4 = this->maglev;
-HXDLIN(  63)		_hx_tmp4->_hx_register(HX_("ColorConverter.ConvertCIELAB",f0,63,d3,ba),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_4(bus))));
+HXDLIN(  63)		_hx_tmp4->_hx_register(HX_("ColorConverter.FromXYZ",de,32,68,cb),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_4(bus))));
 HXLINE(  74)		 ::maglev::MagLev _hx_tmp5 = this->maglev;
-HXDLIN(  74)		_hx_tmp5->_hx_register(HX_("ColorConverter.ConvertCMYK",be,13,2a,28),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_5(bus))));
+HXDLIN(  74)		_hx_tmp5->_hx_register(HX_("ColorConverter.ConvertRGB",6b,b8,71,11),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_5(bus))));
 HXLINE(  85)		 ::maglev::MagLev _hx_tmp6 = this->maglev;
-HXDLIN(  85)		_hx_tmp6->_hx_register(HX_("ColorConverter.AddReferenceColorByRGB",2e,ea,d6,d2),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_6(bus))));
+HXDLIN(  85)		_hx_tmp6->_hx_register(HX_("ColorConverter.ConvertCIELAB",f0,63,d3,ba),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_6(bus))));
 HXLINE(  96)		 ::maglev::MagLev _hx_tmp7 = this->maglev;
-HXDLIN(  96)		_hx_tmp7->_hx_register(HX_("ColorConverter.AddReferenceColorByCIELAB",0d,6e,e7,0a),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_7(bus))));
+HXDLIN(  96)		_hx_tmp7->_hx_register(HX_("ColorConverter.ConvertCMYK",be,13,2a,28),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_7(bus))));
 HXLINE( 107)		 ::maglev::MagLev _hx_tmp8 = this->maglev;
-HXDLIN( 107)		_hx_tmp8->_hx_register(HX_("ColorConverter.AddReferenceColorByCMYK",9b,6c,50,9f),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_8(bus))));
+HXDLIN( 107)		_hx_tmp8->_hx_register(HX_("ColorConverter.ConvertHEX",39,20,6a,11),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_8(bus))));
 HXLINE( 118)		 ::maglev::MagLev _hx_tmp9 = this->maglev;
-HXDLIN( 118)		_hx_tmp9->_hx_register(HX_("ColorConverter.FindReferenceColorByRGB",d4,33,3d,cc),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_9(bus))));
+HXDLIN( 118)		_hx_tmp9->_hx_register(HX_("ColorConverter.ConvertXYZ",b7,55,76,11),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_9(bus))));
 HXLINE( 129)		 ::maglev::MagLev _hx_tmp10 = this->maglev;
-HXDLIN( 129)		_hx_tmp10->_hx_register(HX_("ColorConverter.FindReferenceColorByCIELAB",27,30,8e,23),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_10(bus))));
+HXDLIN( 129)		_hx_tmp10->_hx_register(HX_("ColorConverter.AddReferenceColorByRGB",2e,ea,d6,d2),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_10(bus))));
 HXLINE( 140)		 ::maglev::MagLev _hx_tmp11 = this->maglev;
-HXDLIN( 140)		_hx_tmp11->_hx_register(HX_("ColorConverter.FindReferenceColorByCMYK",35,94,6a,df),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_11(bus))));
+HXDLIN( 140)		_hx_tmp11->_hx_register(HX_("ColorConverter.AddReferenceColorByCIELAB",0d,6e,e7,0a),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_11(bus))));
 HXLINE( 151)		 ::maglev::MagLev _hx_tmp12 = this->maglev;
-HXDLIN( 151)		_hx_tmp12->_hx_register(HX_("ColorConverter.FindReferenceColor",42,6e,8d,ca),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_12(bus))));
+HXDLIN( 151)		_hx_tmp12->_hx_register(HX_("ColorConverter.AddReferenceColorByCMYK",9b,6c,50,9f),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_12(bus))));
 HXLINE( 162)		 ::maglev::MagLev _hx_tmp13 = this->maglev;
-HXDLIN( 162)		_hx_tmp13->_hx_register(HX_("ColorConverter.RemoveReferenceColorSystem",9c,80,cb,b5),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_13(bus))));
+HXDLIN( 162)		_hx_tmp13->_hx_register(HX_("ColorConverter.AddReferenceColorByHEX",fc,51,cf,d2),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_13(bus))));
 HXLINE( 173)		 ::maglev::MagLev _hx_tmp14 = this->maglev;
-HXDLIN( 173)		_hx_tmp14->_hx_register(HX_("ColorConverter.GetReferenceColorSystems",c7,90,8c,15),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_14(bus))));
+HXDLIN( 173)		_hx_tmp14->_hx_register(HX_("ColorConverter.AddReferenceColorByXYZ",7a,87,db,d2),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_14(bus))));
 HXLINE( 184)		 ::maglev::MagLev _hx_tmp15 = this->maglev;
-HXDLIN( 184)		_hx_tmp15->_hx_register(HX_("ColorConverter.GetReferenceColors",76,0a,f6,44),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_15(bus))));
+HXDLIN( 184)		_hx_tmp15->_hx_register(HX_("ColorConverter.FindReferenceColorByRGB",d4,33,3d,cc),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_15(bus))));
 HXLINE( 195)		 ::maglev::MagLev _hx_tmp16 = this->maglev;
-HXDLIN( 195)		_hx_tmp16->_hx_register(HX_("ColorConverter.GetIlluminationObserverAngles",aa,40,1c,a4),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_16(bus))));
+HXDLIN( 195)		_hx_tmp16->_hx_register(HX_("ColorConverter.FindReferenceColorByCIELAB",27,30,8e,23),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_16(bus))));
 HXLINE( 206)		 ::maglev::MagLev _hx_tmp17 = this->maglev;
-HXDLIN( 206)		_hx_tmp17->_hx_register(HX_("ColorConverter.SaveReferenceColors",6d,55,8c,fe),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_17(bus))));
+HXDLIN( 206)		_hx_tmp17->_hx_register(HX_("ColorConverter.FindReferenceColorByCMYK",35,94,6a,df),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_17(bus))));
 HXLINE( 217)		 ::maglev::MagLev _hx_tmp18 = this->maglev;
-HXDLIN( 217)		_hx_tmp18->_hx_register(HX_("ColorConverter.LoadReferenceColors",a4,74,77,57),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_18(bus))));
+HXDLIN( 217)		_hx_tmp18->_hx_register(HX_("ColorConverter.FindReferenceColorByHEX",a2,9b,35,cc),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_18(bus))));
+HXLINE( 228)		 ::maglev::MagLev _hx_tmp19 = this->maglev;
+HXDLIN( 228)		_hx_tmp19->_hx_register(HX_("ColorConverter.FindReferenceColorByXYZ",20,d1,41,cc),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_19(bus))));
+HXLINE( 239)		 ::maglev::MagLev _hx_tmp20 = this->maglev;
+HXDLIN( 239)		_hx_tmp20->_hx_register(HX_("ColorConverter.FindReferenceColor",42,6e,8d,ca),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_20(bus))));
+HXLINE( 250)		 ::maglev::MagLev _hx_tmp21 = this->maglev;
+HXDLIN( 250)		_hx_tmp21->_hx_register(HX_("ColorConverter.RemoveReferenceColorSystem",9c,80,cb,b5),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_21(bus))));
+HXLINE( 261)		 ::maglev::MagLev _hx_tmp22 = this->maglev;
+HXDLIN( 261)		_hx_tmp22->_hx_register(HX_("ColorConverter.GetReferenceColorSystems",c7,90,8c,15),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_22(bus))));
+HXLINE( 272)		 ::maglev::MagLev _hx_tmp23 = this->maglev;
+HXDLIN( 272)		_hx_tmp23->_hx_register(HX_("ColorConverter.GetReferenceColors",76,0a,f6,44),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_23(bus))));
+HXLINE( 283)		 ::maglev::MagLev _hx_tmp24 = this->maglev;
+HXDLIN( 283)		_hx_tmp24->_hx_register(HX_("ColorConverter.GetIlluminationObserverAngles",aa,40,1c,a4),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_24(bus))));
+HXLINE( 294)		 ::maglev::MagLev _hx_tmp25 = this->maglev;
+HXDLIN( 294)		_hx_tmp25->_hx_register(HX_("ColorConverter.SaveReferenceColors",6d,55,8c,fe),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_25(bus))));
+HXLINE( 305)		 ::maglev::MagLev _hx_tmp26 = this->maglev;
+HXDLIN( 305)		_hx_tmp26->_hx_register(HX_("ColorConverter.LoadReferenceColors",a4,74,77,57),::maglev::MagLevFunction_obj::fromFunction( ::Dynamic(new _hx_Closure_26(bus))));
             	}
 
 
