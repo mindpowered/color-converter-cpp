@@ -1,6 +1,9 @@
 
 colorconverter
 ==============
+Converter to convert between various color systems such as RGB, CIELAB, CMYK, HEX, RGB, and XYZ
+
+![Build Status](https://mindpowered.dev/assets/images/github-badges/build-passing.svg)
 
 Contents
 ========
@@ -9,6 +12,7 @@ Contents
 * [Licensing](#licensing)
 * [Requirements](#requirements)
 * [Installation](#installation)
+* [Usage](#usage)
 * [Support](#support)
 
 # Source Code and Documentation
@@ -16,9 +20,7 @@ Contents
 - Documentation: [https://mindpowered.github.io/color-converter-cpp](https://mindpowered.github.io/color-converter-cpp)
 
 # Licensing
-This package is dual-licensed under the MIT and CPAL-1.0 licenses.
-
-To obtain a version licensed under the MIT License, follow the instructions at [get a license][purchase].
+To obtain a version of this package under the MIT License, follow the instructions to [get a license][purchase]. The MIT License has no restrictions on commercial use and permits reuse within proprietary software.
 
 # Requirements
 - Bazel - https://www.bazel.build/
@@ -64,16 +66,25 @@ Reference dependency in BUILD file ...
 ```
 
 
+# Usage
+```cpp
+#include <mindpowered/colorconverter/ColorConverter.h>
+
+auto cc = new ColorConverter();
+auto colors = ipt->FromHEX("336699");
+delete cc;
+```
+
+
 # Support
 We are here to support using this package. If it doesn't do what you're looking for, isn't working, or you just need help, please [Contact us][contact].
 
 There is also a public [Issue Tracker][bugs] available for this package.
-  
-  
-![Documentation - CPP README - color-converter](https://www.google-analytics.com/collect?v=1&tid=UA-178768904-1&cid=555&aip=1&t=event&ec=Documentation&ea=CPP+README&el=color-converter)
+
 
 
 [bugs]: https://github.com/mindpowered/color-converter-cpp/issues
 [contact]: https://mindpowered.dev/support.html?ref=color-converter-cpp/
+[docs]: https://mindpowered.github.io/color-converter-cpp/
 [licensing]: https://mindpowered.dev/?ref=color-converter-cpp
-[purchase]: https://mindpowered.dev/purchase/color-converter-cpp
+[purchase]: https://mindpowered.dev/purchase/
